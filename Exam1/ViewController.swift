@@ -9,21 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var Background: UIView!
     @IBAction func button(_ sender: Any) {
         if Background.backgroundColor == .red {
            Background.backgroundColor = .black
         } else {
             Background.backgroundColor = .red
         }
-        
+    
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    @IBOutlet weak var Background: UIView!
-    
 }
 
