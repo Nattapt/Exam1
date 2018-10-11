@@ -11,7 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func button(_ sender: Any) {
-        Background.backgroundColor = .red
+        if Background.backgroundColor == .red {
+           Background.backgroundColor = .black
+        } else {
+            Background.backgroundColor = .red
+        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
